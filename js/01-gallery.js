@@ -23,7 +23,7 @@ function onCreateGalleryMarkup(array) {
 galleryEl.insertAdjacentHTML("beforeend", onCreateGalleryMarkup(galleryItems))
 
 galleryEl.addEventListener("click", onOpenModalOriginalImage)
-// galleryEl.addEventListener("keyboard", onOpenModalOriginalImage)
+
 
 function onOpenModalOriginalImage(evt) {
   evt.preventDefault();
@@ -39,8 +39,8 @@ function onOpenModalOriginalImage(evt) {
 
 
 
-// function onCreateGalleryMarkup(array) {
 
+// function onCreateGalleryMarkup(array) {
 //     return array.reduce((acc, item) => 
 //         acc + `<div class="gallery__item">
 //   <a class="gallery__link" href="${item.original}">

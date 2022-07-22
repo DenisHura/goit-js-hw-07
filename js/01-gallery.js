@@ -23,7 +23,7 @@ function onCreateGalleryMarkup(array) {
 galleryEl.insertAdjacentHTML("beforeend", onCreateGalleryMarkup(galleryItems))
 
 galleryEl.addEventListener("click", onOpenModalOriginalImage)
-galleryEl.addEventListener("keyboard", onOpenModalOriginalImage)
+// galleryEl.addEventListener("keyboard", onOpenModalOriginalImage)
 
 function onOpenModalOriginalImage(evt) {
   evt.preventDefault();
@@ -35,8 +35,7 @@ function onOpenModalOriginalImage(evt) {
     <img src=${evt.target.dataset.source} width="800" height="600">
 `)
   instance.show()
-     
-}
+     }
 
 
 
